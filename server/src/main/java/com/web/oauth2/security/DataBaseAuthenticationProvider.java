@@ -1,6 +1,7 @@
 package com.web.oauth2.security;
 
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -76,7 +77,7 @@ public class DataBaseAuthenticationProvider implements AuthenticationProvider {
 		userRepository.save(user);
 
 		// Retrieve role list
-		List<GrantedAuthority> roles = user.getRoles();
+        final List<GrantedAuthority> roles = Collections.emptyList();
 
 		// Create authentication token for logged user
 		return new UsernamePasswordAuthenticationToken(user, password, roles);
