@@ -58,6 +58,8 @@ security:
       
 
 spring:
+   main:
+      allow-bean-definition-overriding: true
    # Database configuration
    datasource:
       url: jdbc:h2:file:~/h2/web_db
