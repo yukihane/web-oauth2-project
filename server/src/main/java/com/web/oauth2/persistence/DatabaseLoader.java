@@ -5,12 +5,10 @@ import java.util.Arrays;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
 
 @Service
-@Profile("database-loader")
 public class DatabaseLoader {
 
 	@Autowired
