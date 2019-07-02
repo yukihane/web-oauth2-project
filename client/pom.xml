@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.web.oauth2.project</groupId>
-	<artifactId>web-oauth2-project</artifactId>
+	<artifactId>web-oauth2-project-client</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
